@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package d2.model;
+option go_package = "github.com/jan-g/proto/d2/model";
+
+import "d1/model/foo.proto";
+
+/* Service discovery service */
+
+message Bar {
+    string key = 1;
+}
+
+message Baz {
+    d1.model.Foo foo = 1;
+    Bar bar = 2;
+}

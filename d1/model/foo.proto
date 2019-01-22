@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package d1.model;
+option go_package = "github.com/jan-g/proto/d1/model";
+
+/* Service discovery service */
+
+message Foo {
+    string key = 1;
+}
+
